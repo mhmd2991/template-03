@@ -133,10 +133,10 @@ let contactForm = document.querySelector('#contact-form');
 
 contactForm.addEventListener('submit', e => {
     e.preventDefault();
-    checkInputs();
+    checkInput();
 });
 
-function checkInputs() {
+function checkInput() {
     let mailValue = mail.value.trim();
     let subjectValue = subject.value.trim();
     let msgValue = subject.value.trim();
