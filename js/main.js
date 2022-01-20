@@ -159,3 +159,17 @@ function checkInput() {
         msg.style.border = '';
     }
 }
+
+//Go to the top
+let upButton = document.querySelector('.up');
+
+window.onscroll = function(){
+    this.scrollY >= 800 ? upButton.classList.add("show") : upButton.classList.remove("show");
+}
+
+upButton.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
