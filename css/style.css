@@ -700,6 +700,7 @@ p {
     visibility: hidden;
     height: 0;
     overflow: hidden;
+    transition: var(--mainTransition) ease-in-out;
 }
 
 .our-team .team-container .team-section.active{
